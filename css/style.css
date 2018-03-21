@@ -1,383 +1,507 @@
-html, body{
-    overflow-x: hidden;
-    font-family: 'Muli', cursive;
-    font-size: 1rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Website for a creative purpose only.">
+    <meta name="author" content="DoKu39">
+    <link rel="icon" type="image" href="favicon.ico">
+    <link rel="icon" href="img/favicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-.divider{
-    height: 5px;
-    background-color: #2EBFC2;
-}
-
-
-/*========================================================== Regole per EQUALIZER
-    ==========================================================*/
-
-
-*,*:before,*:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  
-  padding: 0;
-  margin: 0;
-}
-
-@media only screen and (min-width:40.063em){
-        .widget-container {
-  width: 100vw;
-  height: 20vh;
-  position: absolute;
-  left: 0;
-  bottom: 0px;
-  margin: 0 auto;
-  overflow: hidden;
-  font-size: 0; }
-} 
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em){
-    .widget-container {
-  width: 100vw;
-  height: 20vh;
-  position: absolute;
-  left: 0;
-  bottom: 0px;
-  margin: 0 auto;
-  overflow: hidden;
-  font-size: 0; }
-}
-
-@media only screen and (min-width: 120.063em){
-    .widget-container {
-  width: 100vw;
-  height: 30vh;
-  position: absolute;
-  left: 0;
-  bottom: 0px;
-  margin: 0 auto;
-  overflow: hidden;
-  font-size: 0; }
-}
-
-canvas {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-
-/*========================================================== Regole per STAGE
-    ==========================================================*/
-
-
-#stage{
-    background-image: url(../img/stage.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: auto;
-    display: flex;
-    align-items: center;
-    background-attachment: fixed;
-}
-
-#stage-caption{
-    text-align: center;
-    margin: 0 auto;
-    color: white;
-}
-
-#stage-caption h1{
-    display: inline-flex;
-    font-family: 'Iceland', cursive;
-    font-size: 12em;
-    color: #2EBFC2;
-    text-shadow: 0 0 10px #D417A5;
-}
-
-#stage-caption h2{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 4em;
-    color: #FFF;
-    text-shadow: 0 0 5px #000;
-}
-
-@media only screen and (min-width: 2100px){
-    #stage-caption h1{
-    font-size: 40em;
-    }
-    #stage-caption h2{
-    font-size: 12em; 
-    }
-}
-
-@media only screen and (min-width: 1080px max-width: 2099px){
-    #stage-caption h1{
-    font-size: 18em;
-    }
-    #stage-caption h2{
-    font-size: 6em; 
-    }
-}
-
-@media only screen and (max-width:40.063em){
-    #stage h1{
-        font-size: 4em;
-        padding-top: 4em;}
-    #stage h2{
-        font-size: 1.6em;
-        margin-top: 3em;
-    }
-}
-
-
-/*========================================================== Regole per BLOCK 1
-    ==========================================================*/
-
-
-
-/*#block1{
-    padding: 4em;
-    overflow-x: hidden;
-    background-color: #373737;
-}
-
-@media screen and (max-width: 699px){
-    #block1{
-        visibility: hidden;
-        display: none;
-    }
-}
-
-#block1 p{
-    font-size: 2em;
-    color: #FFF;
-    font-weight: 400;
-    font-family: 'Rubik', sans-serif;
-}
-
-.logo{
-    margin: 0 auto;
-    display: flex;
-    margin-top: 3em;
-    height: 125px;
-    width: auto;
+    <title>Hatsune Miku</title>
     
-}
-
-@media only screen and (max-width:40.063em){
-    #block1 p{
-        font-size: 1.8em;}
-    #block1{
-        padding: 1.5em;}
-    .logo{
-        margin-top: 1em;} 
-}*/
-
-#block1{
-    padding: 3em 4em 1em 4em;
-    overflow-x: hidden;
-    background-color: #FFF;
-}
-
-@media screen and (max-width: 699px){
-    #block1{
-        visibility: hidden;
-        display: none;
-    }
-}
-
-#block1 p{
-    font-size: 2em;
-    color: #373737;
-    font-weight: 400;
-    font-family: 'Rubik', sans-serif;
-}
-
-.logo{
-    margin: 0 auto;
-    display: flex;
-    margin-top: 3em;
-    height: 125px;
-    width: auto;
+    <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
     
-}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 
-@media only screen and (max-width:40.063em){
-    #block1 p{
-        font-size: 1.8em;}
-    #block1{
-        padding: 1.5em;}
-    .logo{
-        margin-top: 1em;} 
-}
+</head>
 
+<body>
 
-/*========================================================== Regole per BLOCK 2
-    ==========================================================*/
-
-
-#block2{
-    padding-top: 4em;
-    padding-bottom: 4em;
-    padding-left: 2em;
-    padding-right: 4em;
-    background: #FFF;
-    min-height: 400px;
-	background: transparent;
-}
-
-@media only screen and (min-width: 90.063em){
-    #block2{
-    padding-top: 4em;
-    padding-bottom: 4em;
-    padding-left: 16em;
-    padding-right: 4em;
-    background: #FFF;
-    min-height: 400px;
-	background: transparent;}
-    #block2 p{
-    max-width: 70em;
-    }
-}
-
-@media only screen and (max-width:40.063em){
-    #block2{
-    margin-top: -2em;
-    padding-top: 4em;
-    padding-bottom: 4em;
-    padding-left: 1em;
-    padding-right: 1em;
-    background: #FFF;
-    min-height: 400px;
-    background: transparent;}
-}
-
-.sponsor img{
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    margin-left: 1em;
-}
-
-@media only screen and (max-width:40.063em){
-    .sponsor img{
-    width: 75px;
-    height: 75px;
-    object-fit: contain;
-    margin-left: 1em;}
-}
-
-.feature-content{
-    display: flex;
-    align-items: center;
-}
-
-.btn-miku{
-    padding: 0.8em;
-    background-color: #2EBFC2;
-    color: #D417A5;
-    font-size: 1.4em;
-    font-weight: bold;
-    border: 2px solid #D417A5;
-    transition: ease-in-out 0.5s;
-    font-family: 'Iceland', cursive;
-}
-
-.btn-miku:hover{
-    text-decoration: none;
-    color: #D417A5;
-    opacity: 2;
-    transition: ease-in-out 0.5s;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-}
-
-@media screen and (max-width: 699px){
-    .btn-miku{
-        visibility: hidden;
-        display: none;
+   
+    <section id="stage">
+       
+        <section id="stage-caption">
+            <h1 class="h1-1">Hatsune</h1><h1 class="h1-2" style="margin-left: 1.4rem">Miku</h1>
+            <h2>The first sound of the future</h2>
+        </section>
+        <!--<div id="widgetContainer" class="widget-container">
+            <canvas id="widgetCanvas"></canvas>
+        </div>-->
         
+    </section>
+    
+    <div class="divider" style="margin-top: -1px;"></div>
+    
+    
+    <!-------------------------------------------------------------------------------BLOCK 1----------------------------------------------------------------------------------------------------->
+   
+   
+    <section id="block1">
+        
+        <p class="text-center">But first let me explain what exactly is</p>
+        <img class="text-center img-fluid logo" src="img/miku-logo.png" alt="Hatsune Miku's LOGO">
+        
+    </section>
+   
+   
+   <!-------------------------------------------------------------------------------BLOCK 2----------------------------------------------------------------------------------------------------->
+   
+   
+    <section id="block2">
+       
+        <div class="row feature-content">
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                <div class="block-text">
+                <h1 style="color: #2EBFC2;">Hatsune Miku<br>(初音ミク)</h1><br>
+                <p>Is a humanoid persona voiced by a singing synthesizer application developed by <b>Crypton Future Media.</b> <br>Hatsune Miku is a 16-year-old girl with long, turquoise twintails. <br><br> She uses Yamaha Corporation's Vocaloid 2, Vocaloid 3 and Vocaloid 4 singing synthesizing technologies. <br>She also uses Crypton Future Media's Piapro Studio, a singing synthesizer VSTi Plugin. <br>Her voice is modeled from Japanese voice actress <b>Saki Fujita.</b><br><br> Hatsune Miku has performed at her concerts onstage as an animated projection. <br><br>The name of the character comes from merging the Japanese words for first (初 hatsu), sound (音 ne) and future (ミク miku), thus meaning "<i>the first sound of the future</i>", referring to her position as the first of Crypton's "<i>Character Vocal Series</i>".<br><br>Here's depicted the first draw version of Miku by <b>KEI</b>.</p>
+                
+                <div class="sponsor text-center mb-2"><img class="img-fluid" src="img/crypton.png" alt=""><img class="img-fluid" src="img/piapro.jpg" alt=""><img class="img-fluid" src="img/vocaloid.jpg" alt=""></div>
+                
+                </div>
+                
+    <p class="text-center">
+        <a class="btn-miku" data-toggle="collapse" href="#collapseMiku" role="button" aria-expanded="false" aria-controls="collapseMiku">
+                    Show more
+                  </a>
+    </p>
+
+                
+            </div>
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
+                <img class="img-fluid" src="img/miku-key.png" alt="Miku by KEI">
+            </div>
+        </div>
+        
+    </section>
+   
+   
+   <!-------------------------------------------------------------------------------BLOCK 3----------------------------------------------------------------------------------------------------->
+   
+   
+    <section id="block3">
+
+        <div class="collapse" id="collapseMiku">
+
+            <div id="carouselMiku" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselMiku" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselMiku" data-slide-to="1"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <div class="row feature-content">
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                                <p>Starting today, the English+Japanese bundle of Hatsune <b>Miku’s V3</b> software is now available. <br><br> The bundle price is set at <b>$199.95</b> for a physical copy (no digital option available).<br> The website previously launched Hatsune Miku’s English software in digital download for <b>$149.95</b> USD on August 31st 2013, but is now also available in a physical format.<br><br>
+
+The bundle includes 5 Japanese voice banks (Original, Dark, Soft, Sweet and Solid), as well as English. You will also find Crypton’s own Piapro Studio (vocal editor) and Studio One (DAW w/ sounds+instruments) packages included.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
+                                <img class="img-fluid" src="img/miku-v3-b.png" alt="Hatsune Miku V3">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="row feature-content">
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                                <p>Starting today, the English version of Hatsune <b>Miku’s V4</b> software is now available. <br><br> The bundle price is set at <b>$199.95</b> for a physical copy (no digital option available).<br>
+
+The bundle includes 5 Japanese voice banks (Original, Dark, Soft, Sweet and Solid), as well as English. You will also find Crypton’s own Piapro Studio (vocal editor) and Studio One (DAW w/ sounds+instruments) packages included.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
+                                <img src="img/miku-v4-b.png" alt="Hatsune Miku V4">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselMiku" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+                <a class="carousel-control-next" href="#carouselMiku" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="divider" style="margin-top: -1px;"></div>
+    
+   
+    <!-------------------------------------------------------------------------------BLOCK 4----------------------------------------------------------------------------------------------------->
+   
+   
+   <section id="block4">
+       <div class="row feature-content">
+           <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-5">
+               <div class="block-text">
+               <p class="lead"><b>VOCALOID4</b> Editor is stand-alone software for composing with VOCALOID.</p>
+<p class="pb-3">Enter lyrics and melody lines, and import a backing track in wav format to complete your masterpiece. Enjoy creating your own song!</p>
+          <p class="h2">Preorders and Release Date</p>
+          <p>Registered users who own the previous Hatsune Miku softwares, including Hatsune Miku V2, Hatsune Miku V3, Hatsune Miku V3 bundle, and Hatsune Miku V3 ENGLISH, can purchase Hatsune Miku V4X, Hatsune Miku V4X bundle, and Hatsune Miku V4 ENGLISH at discounted prices. <br></p>
+
+<p class="font-weight-bold">The promotion will end on XXXX XX, 20XX.</p>
+            <p class="font-italic">Note: Users who own KAITO V3 or MEIKO V3 will have their Piapro Studio updated from VOCALOID3 engine to VOCALOID4 engine upon Hatsune Miku V4X installation.</p>
+            </div>
+           </div>
+           <div class="col-12 col-lg-6 col-md-6 col-sm-12 text-center">
+               <img class="img-fluid" src="img/vocaloid-4.png" alt="Vocaloid 4">
+           </div>
+       </div>
+   </section>
+   
+   <div class="divider" style="margin-top: -1px;"></div>
+   
+    <!-------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------------------------->
+     
+     
+    <footer id="footer">
+       
+        <div class="row text-center">
+            <div class="col-12 col-md-12 col-lg-12 col-sm-12">
+                <p>I do NOT own anything on this website. Everything in here belong's to it's creator.</p>
+            </div>
+        </div>
+        
+    </footer>
+    
+    
+   
+    <!--                                    FINE                                                 -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    
+    <script>
+        window.sr = ScrollReveal({
+            reset: false
+        });
+        sr.reveal('.h1-1', {origin: 'left', distance: '500px', duration: '1000', mobile: false, });
+        sr.reveal('.h1-2', {origin: 'right', distance: '500px', duration: '1000', mobile: false, });
+        sr.reveal('#stage-caption h2', {duration: '2000', opacity:'0', delay:'500', mobile: false,  });
+    </script>
+    
+    
+    <script>
+    function get(el) {
+    if(typeof el === "string") 
+        return document.getElementById(el);
+    return el;
+}
+
+var rand = function(max, min, _int) {
+  var max = (max === 0 || max)?max:1, 
+      min = min || 0, 
+      gen = min + (max - min)*Math.random();
+  
+  return (_int)?Math.round(gen):gen;
+};
+
+function setStyleCss3(object, key, value) {
+  var keyName = key.substr(0,1).toUpperCase() + key.substr(1);
+  object.style['webkit' + keyName] = value;
+  object.style['moz' + keyName] = value;
+  object.style['ms' + keyName] = value;
+  object.style[key] = value;
+}
+
+/*============================================*/
+
+var MusicEqualizerBar = (function(){
+
+    var container = get('widgetContainer');
+    var canvas = get('widgetCanvas');
+    var ctx = canvas.getContext('2d');
+
+    var containerWidth, containerHeight;
+
+    var isRunning = false;
+    var isStop = false;
+
+    var maxHeight = 98;
+    var minHeight = 20;
+
+    var allBars = new Array();
+
+    var timeoutAnimate;
+    var durationTimeoutAnimate = 1000/60;
+
+    var DIRECTION_BOTH = "Both";
+    var DIRECTION_UPWARDS = "Upwards";
+    var DIRECTION_BOTTOM = "Bottom";
+
+    var baseDuration = 4;
+    var duration = 4;
+    var currentX = 0;
+
+    /*--- settings from banner flow ---*/
+    var color, size, speed, space, direction;
+
+
+    function startWidget(currentSesssion){
+
+      if(!containerWidth || !containerHeight)
+        return;
+
+      canvas.width = containerWidth;
+      canvas.height = containerHeight;
+      ctx.fillStyle = color;
+      duration = (baseDuration/speed * 1000)/durationTimeoutAnimate;
+      allBars = new Array();
+
+      createMusicBars();
+
+      animateBars();
+      
     }
-}
 
-
-/*========================================================== Regole per BLOCK 3
-    ==========================================================*/
-
-
-.carousel{
-    padding-top: 4em;
-    padding-bottom: 6em;
-    padding-left: 2em;
-    padding-right: 0em;
-    background-color: #373737;
-    color: #FFF;
-}
-
-#block3 p{
-    padding-left: 8em;
-}
-
-@media only screen and (min-width: 90.063em){
-    #block3 p{
-    padding-left: 20em;
-    max-width: 70em;} 
-}
-
-.carousel-indicators{
-    bottom: 2em;
-}
-
-.carousel-indicators li{
-    background-color: #2EBFC2;
-}
-
-.carousel-indicators .active{
-    background-color: #D417A5;
-}
-
-.carousel-control-next{
-    right: -5em;
-}
-
-.carousel-control-prev{
-    left: -5em;
-}
-
-
-/*========================================================== Regole per BLOCK 4
-    ==========================================================*/
-
-
-#block4{
-    background-color: #FFF;
-    padding: 4em 2em 4em 4em;
-}
-
-@media only screen and (min-width: 2100px){
-    .block-text{
-    margin-left: 30em;
-    max-width: 70em;
+    function calculateHeightBaseOnSin(left) {
+      var cycle = containerWidth/2;
+      return Math.sin(left*2*Math.PI/cycle)*containerHeight/4 + containerHeight/2 + rand(containerHeight/4, -containerHeight/4, true);
     }
-}
 
-@media only screen and (max-width:40.063em){
-    #block4{
-    padding: 4em 1em;}
-}
+    function createMusicBars() {
+      var numberBar = 0;
+      while(true) {
+        var bar = {};
+        bar.width = size;
+        
+        var left = numberBar*(size+space);
+        var height = calculateHeightBaseOnSin(left);
+        var top = (containerHeight-height)/2;
+        if(direction.toLowerCase() == DIRECTION_BOTTOM.toLowerCase())
+          top = 0;
+        else if(direction.toLowerCase() == DIRECTION_UPWARDS.toLowerCase())
+          top = (100 - height)/100*containerHeight;
+
+        bar.height = height;
+        bar.nextHeight = height;
+        bar.deltaHeight = 0;
+        bar.direction = 1;
+        bar.top = top;
+        bar.color = color;
+        bar.left = left;
+
+        allBars.push(bar);
+
+        numberBar++;
+        
+        if(numberBar * (size + space) >= containerWidth - size)
+          break;
+      }
+    }
+
+    function calculateNextHeightBars() {
+      currentX -= containerWidth/2/10;
+      if(currentX < -containerWidth/2)
+        currentX = 0;
+
+      for(var i=0;i<allBars.length;i++) {
+        var bar = allBars[i];
+        var height = calculateHeightBaseOnSin(bar.left + currentX);
+        bar.nextHeight = height;
+        bar.deltaHeight = (bar.nextHeight - bar.height)/duration;
+        bar.direction = height > bar.height ? 1 : -1;
+      }
+    }
+
+    function calculateHeightBars() {
+      var isEnd = false;
+
+      for(var i=0;i<allBars.length;i++) {
+        allBars[i].height += allBars[i].deltaHeight;
+        if(allBars[i].direction > 0) {
+          if(allBars[i].height >= allBars[i].nextHeight) {
+            allBars[i].height = allBars[i].nextHeight;
+            isEnd = true;
+          }
+        } else {
+          if(allBars[i].height <= allBars[i].nextHeight) {
+            allBars[i].height = allBars[i].nextHeight;
+            isEnd = true;
+          }
+        }
+
+        allBars[i].top = (containerHeight - allBars[i].height)/2;
+        if(direction.toLowerCase() == DIRECTION_BOTTOM.toLowerCase())
+          allBars[i].top = 0;
+        else if(direction.toLowerCase() == DIRECTION_UPWARDS.toLowerCase())
+          allBars[i].top = containerHeight - allBars[i].height;
+      }
+
+      if(isEnd) {
+        calculateNextHeightBars();
+      }
+    }
 
 
-/*========================================================== Regole per FOOTER
-    ==========================================================*/
+    function animateBars() {
+      
+      timeoutAnimate = setTimeout(function() {
+
+        if(isStop) {
+
+          isRunning = false;
+
+          return;
+        }
+
+        isRunning = true;
+
+        clearTimeout(timeoutAnimate);
+
+        calculateHeightBars();
+
+        drawMusicBars();
+
+        animateBars();
+
+      }, durationTimeoutAnimate);
+    }
+
+    function drawMusicBars() {
+      ctx.save();
+      ctx.clearRect(0,0,containerWidth, containerHeight);
+      for(var i=0;i<allBars.length;i++) { 
+        ctx.fillRect(allBars[i].left, allBars[i].top, size, allBars[i].height);
+      }
+      ctx.restore();
+    }
+    
+    /*==============================================*/
+    /*===== Start point of animation  =====*/
+    /*==============================================*/
+
+    function reloadGlobalVariables() {
+
+        containerWidth = parseInt(window.getComputedStyle(container).getPropertyValue('width'));
+        containerHeight = parseInt(window.getComputedStyle(container).getPropertyValue('height'));
+
+    }
+
+    function stopCurrentAnimation(callback) {
+
+        isStop = true;
+
+        if(isRunning) {
+            var timeout = setTimeout(function(){
+                clearTimeout(timeout);
+                stopCurrentAnimation(callback);
+            }, 200);
+        } else {
+            isStop = false;
+            if(callback)
+                callback();
+        }
+
+    }
+
+    function startAnimation(currentSesssion) {
+        stopCurrentAnimation(function(){
+            startWidget(currentSesssion);
+        });
+    }
+
+    /*==============================================*/
+    /*===== Default settings from Banner Flow  =====*/
+    /*==============================================*/
+
+    function loadSettings() {
+      
+          color = "#2EBFC2"; 
+          size = 40;
+          speed = 20;
+          space = 10;
+          direction = DIRECTION_UPWARDS;
+      
+    }
+
+    /*====================================================*/  
+
+    var timeoutStart;
+    var sessionId = 0;
+
+    function init() {
+        if(timeoutStart) {
+            clearTimeout(timeoutStart);
+
+            timeoutStart = setTimeout(function() {
+                loadSettings();
+                reloadGlobalVariables();
+                startAnimation(++sessionId);
+            }, 500);
+        } else {
+            timeoutStart = setTimeout(function(){
+                loadSettings();
+                reloadGlobalVariables();
+                startAnimation(++sessionId);
+            }, 0);
+        }
+    }
+
+    var isStartAnimation = false;
+
+    function onStart() {
+      if(typeof BannerFlow != "undefined" && !BannerFlow.editorMode && isStartAnimation) {
+          return;
+      }
+
+      isStartAnimation = true;
+      init();
+    }
 
 
-#footer{
-    background-color: #373737;
-    color: #FFF;
-    padding: 2em;
-}
+    function onResize(){
+      if(typeof BannerFlow != "undefined" && !BannerFlow.editorMode) {
+          return;
+      }
 
-#footer p{
-    font-size: 0.8em;
-}
+      init();
+    }
+
+    function resetParameter(){
+      if(typeof BannerFlow != "undefined" && !BannerFlow.editorMode) {
+          return;
+      }
+
+      init();
+    }
+
+    return {
+        start: onStart,
+
+        onResized: onResize,
+
+        onSettingChanged: resetParameter
+    };
+})();
+
+MusicEqualizerBar.start();
+</script>
+
+
+</body>
+
+</html>
