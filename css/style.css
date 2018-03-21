@@ -1,0 +1,351 @@
+html, body{
+    overflow-x: hidden;
+    font-family: 'Muli', cursive;
+    font-size: 1rem;
+}
+
+.divider{
+    height: 5px;
+    background-color: #2EBFC2;
+}
+
+
+/*========================================================== Regole per EQUALIZER
+    ==========================================================*/
+
+
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (min-width:40.063em){
+        .widget-container {
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 0; }
+} 
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em){
+    .widget-container {
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 0; }
+}
+
+@media only screen and (min-width: 120.063em){
+    .widget-container {
+  width: 100vw;
+  height: 30vh;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 0; }
+}
+
+canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+
+/*========================================================== Regole per STAGE
+    ==========================================================*/
+
+
+#stage{
+    background-image: url(../img/stage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+#stage-caption{
+    padding-bottom: 18em;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+#stage-caption h1{
+    display: inline-flex;
+    font-family: 'Iceland', cursive;
+    font-size: 12em;
+    color: #2EBFC2;
+    text-shadow: 0 0 10px #D417A5;
+}
+
+#stage-caption h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    color: #FFF;
+    text-shadow: 0 0 5px #000;
+}
+
+@media only screen and (max-width:40.063em){
+    #stage h1{
+        font-size: 4em;
+        padding-top: 4em;}
+    #stage h2{
+        font-size: 1.6em;
+        margin-top: 3em;
+    }
+}
+
+
+/*========================================================== Regole per BLOCK 1
+    ==========================================================*/
+
+
+
+/*#block1{
+    padding: 4em;
+    overflow-x: hidden;
+    background-color: #373737;
+}
+
+@media screen and (max-width: 699px){
+    #block1{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+#block1 p{
+    font-size: 2em;
+    color: #FFF;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+.logo{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 3em;
+    height: 125px;
+    width: auto;
+    
+}
+
+@media only screen and (max-width:40.063em){
+    #block1 p{
+        font-size: 1.8em;}
+    #block1{
+        padding: 1.5em;}
+    .logo{
+        margin-top: 1em;} 
+}*/
+
+#block1{
+    padding: 3em 4em 1em 4em;
+    overflow-x: hidden;
+    background-color: #FFF;
+}
+
+@media screen and (max-width: 699px){
+    #block1{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+#block1 p{
+    font-size: 2em;
+    color: #373737;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+.logo{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 3em;
+    height: 125px;
+    width: auto;
+    
+}
+
+@media only screen and (max-width:40.063em){
+    #block1 p{
+        font-size: 1.8em;}
+    #block1{
+        padding: 1.5em;}
+    .logo{
+        margin-top: 1em;} 
+}
+
+
+/*========================================================== Regole per BLOCK 2
+    ==========================================================*/
+
+
+#block2{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding-left: 2em;
+    padding-right: 4em;
+    background: #FFF;
+    min-height: 400px;
+	background: transparent;
+}
+
+@media only screen and (min-width: 90.063em){
+    #block2{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding-left: 16em;
+    padding-right: 4em;
+    background: #FFF;
+    min-height: 400px;
+	background: transparent;}
+    #block2 p{
+    max-width: 70em;
+    }
+}
+
+@media only screen and (max-width:40.063em){
+    #block2{
+    margin-top: -2em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background: #FFF;
+    min-height: 400px;
+    background: transparent;}
+}
+
+.sponsor img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-left: 1em;
+}
+
+@media only screen and (max-width:40.063em){
+    .sponsor img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-left: 1em;}
+}
+
+.feature-content{
+    display: flex;
+    align-items: center;
+}
+
+.btn-miku{
+    padding: 0.8em;
+    background-color: #2EBFC2;
+    color: #D417A5;
+    font-size: 1.4em;
+    font-weight: bold;
+    border: 2px solid #D417A5;
+    transition: ease-in-out 0.5s;
+    font-family: 'Iceland', cursive;
+}
+
+.btn-miku:hover{
+    text-decoration: none;
+    color: #D417A5;
+    opacity: 2;
+    transition: ease-in-out 0.5s;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+@media screen and (max-width: 699px){
+    .btn-miku{
+        visibility: hidden;
+        display: none;
+        
+    }
+}
+
+
+/*========================================================== Regole per BLOCK 3
+    ==========================================================*/
+
+
+.carousel{
+    padding-top: 4em;
+    padding-bottom: 6em;
+    padding-left: 2em;
+    padding-right: 0em;
+    background-color: #373737;
+    color: #FFF;
+}
+
+#block3 p{
+    padding-left: 8em;
+}
+
+@media only screen and (min-width: 90.063em){
+    #block3 p{
+    padding-left: 20em;
+    max-width: 70em;} 
+}
+
+.carousel-indicators{
+    bottom: 2em;
+}
+
+.carousel-indicators li{
+    background-color: #2EBFC2;
+}
+
+.carousel-indicators .active{
+    background-color: #D417A5;
+}
+
+.carousel-control-next{
+    right: -5em;
+}
+
+.carousel-control-prev{
+    left: -5em;
+}
+
+
+/*========================================================== Regole per BLOCK 4
+    ==========================================================*/
+
+
+#block4{
+    background-color: #FFF;
+    padding: 4em 2em;
+}
+
+
+/*========================================================== Regole per FOOTER
+    ==========================================================*/
+
+
+#footer{
+    background-color: #373737;
+    color: #FFF;
+    font-size: 1em;
+    padding: 4em 2em 2em 2em;
+}
