@@ -63,10 +63,19 @@
  
 .icon-down-open:before { content: '\f004'; } /* '' */
 
+
+/*========================================================== Regole per HTML
+    ==========================================================*/
+
+
 html, body{
     overflow-x: hidden;
     font-family: 'Muli', cursive;
     font-size: 1rem;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 .divider{
